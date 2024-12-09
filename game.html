@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Match Game</title>
+    <p> <title>Memory Match Game</title></p>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -21,12 +21,10 @@
             font-size: 2.5em;
             color: #2a6ebd;
             margin: 0;
-            text-shadow: 2px 2px 5px white;
-            background: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: inline-block; /* Ensures background fits tightly around text */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 10px;
+            display: inline-block;
         }
 
         h2 {
@@ -100,6 +98,25 @@
             margin-top: 10px;
             text-shadow: 1px 1px 3px black;
         }
+
+        /* Back to Favorites Button */
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #f77090;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #c44d6f;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -109,6 +126,7 @@
         <div id="score">Matches Found: 0</div>
         <div id="game-board"></div>
         <button id="restart-button">Restart Game</button>
+        <a href="myfavs.html" class="back-button">Back to Favorites</a>
     </div>
 
     <script>
